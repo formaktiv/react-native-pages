@@ -270,8 +270,8 @@ export default class Pages extends PureComponent {
           style={[styles.container, style, scrollStyle]}
           onLayout={this.onLayout}
           onScroll={this.onScroll}
-          onScrollBeginDrag={this.onScrollBeginDrag}
-          onScrollEndDrag={this.onScrollEndDrag}
+          onMomentumScrollBegin={this.onScrollBeginDrag}
+          onMomentumScrollEnd={this.onScrollEndDrag}
           ref={this.updateRef}
         >
           {Children.map(children, this.renderPage)}
